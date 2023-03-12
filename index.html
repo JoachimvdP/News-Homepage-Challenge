@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+ 
+</head>
+<body class="main-grid">
+  <div class="overlay" data-visible="false"></div>
+
+  <div class="container">
+    <header class="flex-group">
+      <img src="images/logo.svg" id="logo" alt="The W. tech news logo">
+      
+      <button class="mobile-nav-toggle"
+      aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only hidden">Menu</span>
+      </button>
+
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="navbar">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="grid-container">
+    <section class="main-article">
+    <picture>
+      <source srcset="images/image-web-3-desktop.jpg" media="(min-width: 686px)">
+      <img src="images/image-web-3-mobile.jpg" alt="colorful 3 dimensional image consisting of blocks, cilinders, and triangles">
+    </picture>
+    <div class="read-more">
+    
+        <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+    
+        <div class="main-article-summary">
+          <p>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?
+          </p>
+          <button class="button">Read more</button>
+        </div>
+    </div>
+    </section>
+    <section class="new-articles">
+    
+    
+      <h2>New </h2>
+    
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    
+    <hr>
+    
+      <h3>The Downsides of AI Artistrys</h3>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    
+    <hr>
+    
+      <h3>Is VC Funding Drying Up?</h3>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </section>
+    <section class="top-articles">
+    
+            <div class="article">
+            <img class="top-image" src="images/image-retro-pcs.jpg" alt="80's style computer in a purplish blue light.">
+    
+            <div class="summary">
+              <p class="number">01</p>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+    
+              <div class="article">
+                <img class="top-image" src="images/image-top-laptops.jpg" alt="laptop keyboard with glowing red keys.">
+    
+              <div class="summary">
+                <p class="number">02</p>
+                <h3>Top 10 Laptops of 2022</h3>
+                <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+    
+    
+            <div class="article">
+              <img class="top-image" src="images/image-gaming-growth.jpg" alt="Playstation 4 controller hovering above someones left-hand.">
+              <div class="summary">
+                <p class="number">03</p>
+                <h3>The Growth of Gaming</h3>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+    
+    </section>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Joachim van der Pol</a>.
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
